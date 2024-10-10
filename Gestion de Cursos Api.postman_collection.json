@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "9ee72140-0524-4ff8-8035-5befab30601b",
+		"name": "Gestion de Cursos Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2775307"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"student1\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5272/api/es/auth/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5272",
+					"path": [
+						"api",
+						"es",
+						"auth",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiYzQxNWM0NS1iZDM5LTQ1YjUtMzE4ZC0wOGRjZDQ2ODRiMGMiLCJqdGkiOiI5OWM4NDcwMS05NDM1LTQ1ZmMtOWNkNC03N2VmMzZiODU2YzEiLCJBcHBVc2VySWQiOiJiYzQxNWM0NS1iZDM5LTQ1YjUtMzE4ZC0wOGRjZDQ2ODRiMGMiLCJuYmYiOjE3Mjg1Nzc3NzUsImV4cCI6MTcyODU4MTM3NSwiaXNzIjoiR2VzdGlvbkRlQ3Vyc29zQXBpIiwiYXVkIjoiR2VzdGlvbkRlQ3Vyc29zQXBpIn0.yIgoie2GFXEc9o5Ir6d1dTcVlQThY30s_GxBN57qVA4",
+						"description": "\n",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5272/api/en/Management/students/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5272",
+					"path": [
+						"api",
+						"en",
+						"Management",
+						"students",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student List Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiYzQxNWM0NS1iZDM5LTQ1YjUtMzE4ZC0wOGRjZDQ2ODRiMGMiLCJqdGkiOiI5OWM4NDcwMS05NDM1LTQ1ZmMtOWNkNC03N2VmMzZiODU2YzEiLCJBcHBVc2VySWQiOiJiYzQxNWM0NS1iZDM5LTQ1YjUtMzE4ZC0wOGRjZDQ2ODRiMGMiLCJuYmYiOjE3Mjg1Nzc3NzUsImV4cCI6MTcyODU4MTM3NSwiaXNzIjoiR2VzdGlvbkRlQ3Vyc29zQXBpIiwiYXVkIjoiR2VzdGlvbkRlQ3Vyc29zQXBpIn0.yIgoie2GFXEc9o5Ir6d1dTcVlQThY30s_GxBN57qVA4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5272/api/en/Management/students/list-students-details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5272",
+					"path": [
+						"api",
+						"en",
+						"Management",
+						"students",
+						"list-students-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5YWVlMWNmMC1iMDc2LTRlNTktMzE4Yy0wOGRjZDQ2ODRiMGMiLCJqdGkiOiJmZDMyYTBmOS0yZDdlLTQ2MDctOGU0MS1mOWIxMDA0ODNiYjMiLCJBcHBVc2VySWQiOiI5YWVlMWNmMC1iMDc2LTRlNTktMzE4Yy0wOGRjZDQ2ODRiMGMiLCJuYmYiOjE3Mjc3NDI0NzAsImV4cCI6MTcyNzc0NjA3MCwiaXNzIjoiR2VzdGlvbkRlQ3Vyc29zQXBpIiwiYXVkIjoiR2VzdGlvbkRlQ3Vyc29zQXBpIn0.oF6eXUwpN_p5u9c0lHXokDYvYTNSYsAlteRBkr8X4Kc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5272/api/en/Management/students/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5272",
+					"path": [
+						"api",
+						"en",
+						"Management",
+						"students",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiYzQxNWM0NS1iZDM5LTQ1YjUtMzE4ZC0wOGRjZDQ2ODRiMGMiLCJqdGkiOiI5OWM4NDcwMS05NDM1LTQ1ZmMtOWNkNC03N2VmMzZiODU2YzEiLCJBcHBVc2VySWQiOiJiYzQxNWM0NS1iZDM5LTQ1YjUtMzE4ZC0wOGRjZDQ2ODRiMGMiLCJuYmYiOjE3Mjg1Nzc3NzUsImV4cCI6MTcyODU4MTM3NSwiaXNzIjoiR2VzdGlvbkRlQ3Vyc29zQXBpIiwiYXVkIjoiR2VzdGlvbkRlQ3Vyc29zQXBpIn0.yIgoie2GFXEc9o5Ir6d1dTcVlQThY30s_GxBN57qVA4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5272/api/en/Management/students/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5272",
+					"path": [
+						"api",
+						"en",
+						"Management",
+						"students",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiYzQxNWM0NS1iZDM5LTQ1YjUtMzE4ZC0wOGRjZDQ2ODRiMGMiLCJqdGkiOiJkOTQ0ZTU4OC1kNWI4LTRiODEtODFiOC1iMjIyNmRlM2Q2MTMiLCJBcHBVc2VySWQiOiJiYzQxNWM0NS1iZDM5LTQ1YjUtMzE4ZC0wOGRjZDQ2ODRiMGMiLCJuYmYiOjE3Mjc3NTI4OTcsImV4cCI6MTcyNzc1NjQ5NywiaXNzIjoiR2VzdGlvbkRlQ3Vyc29zQXBpIiwiYXVkIjoiR2VzdGlvbkRlQ3Vyc29zQXBpIn0.GVW8INC4KCh8aJp9J3gqG5nhsatyWMQIEFvOI60QvT4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"studentName\": \"Juan Peres Test\",\r\n  \"courseId\": 1,\r\n  \"instructorId\": 1,\r\n  \"courseFee\": 200,\r\n  \"courseDuration\": 3,\r\n  \"courseStartDate\": \"2024-09-13 00:00:00.0000000\",\r\n  \"batchTime\": \"2024-09-13 00:00:00.0000000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5272/api/en/Management/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5272",
+					"path": [
+						"api",
+						"en",
+						"Management",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5YWVlMWNmMC1iMDc2LTRlNTktMzE4Yy0wOGRjZDQ2ODRiMGMiLCJqdGkiOiJmM2Y0ZmUxMS04YTNjLTRmYWQtOTI4Zi03MjQwOGRiMzE3ZjIiLCJBcHBVc2VySWQiOiI5YWVlMWNmMC1iMDc2LTRlNTktMzE4Yy0wOGRjZDQ2ODRiMGMiLCJuYmYiOjE3Mjc3NDY4NjgsImV4cCI6MTcyNzc1MDQ2OCwiaXNzIjoiR2VzdGlvbkRlQ3Vyc29zQXBpIiwiYXVkIjoiR2VzdGlvbkRlQ3Vyc29zQXBpIn0.Ao52mg_1WUagVgZka9Qse9oSvvZQFLyYCx8Zjb6hF28",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n  \"studentName\": \"Juan Peres TestTestTest\",\r\n  \"courseId\": 26,\r\n  \"instructorId\": 2,\r\n  \"courseFee\": 200,\r\n  \"courseDuration\": 3,\r\n  \"courseStartDate\": \"2024-09-13 00:00:00.0000000\",\r\n  \"batchTime\": \"2024-09-13 00:00:00.0000000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5272/api/en/Management/students/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5272",
+					"path": [
+						"api",
+						"en",
+						"Management",
+						"students",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

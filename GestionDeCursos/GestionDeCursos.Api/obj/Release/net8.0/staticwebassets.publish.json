@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9GLkAd6YDRzUobbU3O+I2/w7gDq6E1WdNohte9bOlfQ=",
+  "Source": "GestionDeCursos.Api",
+  "BasePath": "_content/GestionDeCursos.Api",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
